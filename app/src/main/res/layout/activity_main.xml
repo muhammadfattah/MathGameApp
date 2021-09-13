@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="710dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:text="Math Game"
+            android:textAlignment="center"
+            android:textColor="#F00"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/answerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:textAlignment="center"
+            android:textColor="#0F0"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="20sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/topLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:backgroundTint="#FF0000"
+                android:minHeight="80dip"
+                android:onClick="buttonPressed"
+                android:text="99"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/topRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:backgroundTint="#FF0000"
+                android:backgroundTintMode="add"
+                android:minHeight="80dip"
+                android:onClick="buttonPressed"
+                android:text="99"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bottomLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:backgroundTint="#FF0000"
+                android:backgroundTintMode="add"
+                android:minHeight="80dip"
+                android:onClick="buttonPressed"
+                android:text="99"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/bottomRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:backgroundTint="#FF0000"
+                android:backgroundTintMode="add"
+                android:minHeight="80dip"
+                android:onClick="buttonPressed"
+                android:text="99"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
