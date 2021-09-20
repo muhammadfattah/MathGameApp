@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -22,20 +23,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30sp"
+            android:layout_margin="50sp"
             android:text="Math Game"
             android:textAlignment="center"
-            android:textColor="#F00"
-            android:textSize="50sp" />
+            android:textColor="#00F"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/resultTextView"
+        <ImageView
+            android:id="@+id/resultImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="97dp"
             android:layout_marginBottom="20sp"
-            android:textAlignment="center"
-            android:textColor="#000"
-            android:textSize="40sp" />
+            app:srcCompat="@drawable/correct" />
 
         <TextView
             android:id="@+id/answerTextView"
@@ -43,80 +43,139 @@
             android:layout_height="wrap_content"
             android:text="Answer"
             android:textAlignment="center"
-            android:textColor="#0F0"
-            android:textSize="40sp" />
+            android:textColor="#00F"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
+            android:layout_marginLeft="80sp"
             android:layout_marginTop="30sp"
-            android:layout_marginRight="20sp"
+            android:layout_marginRight="80sp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/topLeftButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="20sp"
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF0000"
-                android:backgroundTint="#FF0000"
-                android:minHeight="80dip"
-                android:onClick="buttonPressed"
-                android:text="99"
-                android:textSize="30sp" />
+                android:text="A."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/topRightButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="20sp"
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF0000"
-                android:backgroundTint="#FF0000"
-                android:backgroundTintMode="add"
-                android:minHeight="80dip"
-                android:onClick="buttonPressed"
-                android:text="99"
-                android:textSize="30sp" />
+                android:text="B."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bottomLeftButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="20sp"
+            <TextView
+                android:id="@+id/textViewC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF0000"
-                android:backgroundTint="#FF0000"
-                android:backgroundTintMode="add"
-                android:minHeight="80dip"
-                android:onClick="buttonPressed"
-                android:text="99"
-                android:textSize="30sp" />
+                android:text="C."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/bottomRightButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="20sp"
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FF0000"
-                android:backgroundTint="#FF0000"
-                android:backgroundTintMode="add"
-                android:minHeight="80dip"
-                android:onClick="buttonPressed"
-                android:text="99"
-                android:textSize="30sp" />
+                android:text="D."
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="50sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:background="#00FA0000"
+                android:onClick="buttonPressed"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/a_biasa" />
+
+            <ImageButton
+                android:id="@+id/imageButtonB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="buttonPressed"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/b_biasa" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="50sp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="buttonPressed"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/c_biasa" />
+
+            <ImageButton
+                android:id="@+id/imageButtonD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="buttonPressed"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/d_biasa" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
